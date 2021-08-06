@@ -4,6 +4,8 @@ const nodes7 = require('nodes7')
 const MixerWorkingController = require('./communication/mixer_working.websocket')
 const useDataRefresher = require('./communication/useDataRefresh')
 const variablesMapping = require('./communication/dataMapper/variableAdresess')
+const ControllerChoosenColorCode = require('./communication/choosen_color_code.websocket')
+const ControllerPaints = require('./communication/paints.websocket')
 
 const app = express()
 const port = 3001
@@ -30,7 +32,7 @@ plcConnection.initiateConnection({
 }, () => {
     plcConnectedSuccessfully = true
     plcConnection.setTranslationCB((tag) => variablesMapping[tag])
-    
+
     plcConnection.addItems(Object.keys(variablesMapping))
 })
 
@@ -41,4 +43,6 @@ io.on('connection', (socket) => {
     }
 
     MixerWorkingController(socket, plcConnection)
+    ControllerChoosenColorCode(socket, plcConnection)
+    ControllerPaints(socket, plcConnection)
 })
