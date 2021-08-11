@@ -6,6 +6,7 @@ const useDataRefresher = require('./communication/useDataRefresh')
 const variablesMapping = require('./communication/dataMapper/variableAdresess')
 const ControllerChoosenColorCode = require('./communication/choosen_color_code.websocket')
 const ControllerPaints = require('./communication/paints.websocket')
+const ControllerCleaningSubstance = require('./communication/cleaning_substance.websocket')
 
 const app = express()
 const port = 3001
@@ -38,11 +39,12 @@ plcConnection.initiateConnection({
 
 io.on('connection', (socket) => {
     console.info(`Connection success, ready to getting data...`)
-    if (plcConnectedSuccessfully) {
-        useDataRefresher(socket, plcConnection)
-    }
+        // if (plcConnectedSuccessfully) {
+    useDataRefresher(socket, plcConnection)
+        // }
 
     MixerWorkingController(socket, plcConnection)
     ControllerChoosenColorCode(socket, plcConnection)
     ControllerPaints(socket, plcConnection)
+    ControllerCleaningSubstance(socket, plcConnection)
 })
