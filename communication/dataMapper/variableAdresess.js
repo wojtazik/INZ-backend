@@ -41,6 +41,10 @@ const variablesMapping = {
     'mixing_tank.valve_open': 'TODO',
     'mixing_tank.time_seconds_remaining': 'TODO',
     'mixing_tank.current_volume': 'TODO',
+    'mixing_tank.volume_to_gain': 'TODO',
+    'mixing_tank.time_seconds': 'TODO',
+
+
 
     'alarm.0.safety_switch.date': 'DB1,DTL0',
     'alarm.0.safety_switch.message': 'DB1,S12.256',

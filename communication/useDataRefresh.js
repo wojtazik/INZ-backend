@@ -19,7 +19,7 @@ function useDataRefresher(socket, plcConnection) {
         'paints.cyan.max_level': false,
         'paints.cyan.min_level': false,
 
-        'paints.magenta.refill': false, //TD
+        'paints.magenta.refill': true, //TD
         'paints.magenta.current_volume': 300, //TD
         'paints.magenta.valve_open': false,
         'paints.magenta.max_level': false,
@@ -51,7 +51,7 @@ function useDataRefresher(socket, plcConnection) {
 
         'mixing_tank.valve_open': false,
         'mixing_tank.time_seconds_remaining': 0,
-        'mixing_tank.current_volume': 120,
+        'mixing_tank.current_volume': 520,
     }
 
     socket.emit('refresh.data', {
