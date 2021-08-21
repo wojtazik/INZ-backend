@@ -57,7 +57,45 @@ function refreshDataMapper(values) {
             valve_open: values['mixing_tank.valve_open'],
             mixing_time_seconds_remaining: values['mixing_tank.time_seconds_remaining'],
             current_volume: values['mixing_tank.current_volume']
-        }
+        },
+        errors: [{
+                time: values['alarm.0.safety_switch.date'],
+                text: values['alarm.0.safety_switch.message'],
+                code: values['alarm.0.safety_switch.error_code'],
+                location: values['alarm.0.safety_switch.switcher_state']
+            },
+            {
+                time: values['alarm.0.safety_switch.date'],
+                text: values['alarm.0.safety_switch.message'],
+                code: values['alarm.0.safety_switch.error_code'],
+                location: values['alarm.0.safety_switch.switcher_state']
+            },
+            {
+                time: values['alarm.0.safety_switch.date'],
+                text: values['alarm.0.safety_switch.message'],
+                code: values['alarm.0.safety_switch.error_code'],
+                location: values['alarm.0.safety_switch.switcher_state']
+            },
+            {
+                time: values['alarm.0.safety_switch.date'],
+                text: values['alarm.0.safety_switch.message'],
+                code: values['alarm.0.safety_switch.error_code'],
+                location: values['alarm.0.safety_switch.switcher_state']
+            },
+            {
+                time: values['alarm.0.safety_switch.date'],
+                text: values['alarm.0.safety_switch.message'],
+                code: values['alarm.0.safety_switch.error_code'],
+                location: values['alarm.0.safety_switch.switcher_state']
+            },
+            {
+                time: values['alarm.0.safety_switch.date'],
+                text: values['alarm.0.safety_switch.message'],
+                code: values['alarm.0.safety_switch.error_code'],
+                location: values['alarm.0.safety_switch.switcher_state']
+            },
+        ]
+
 
     }
 }
