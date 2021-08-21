@@ -52,6 +52,11 @@ function useDataRefresher(socket, plcConnection) {
         'mixing_tank.valve_open': false,
         'mixing_tank.time_seconds_remaining': 0,
         'mixing_tank.current_volume': 520,
+
+        'alarm.0.safety_switch.date': '2021-08-16_2137',
+        'alarm.0.safety_switch.message': 'Błąd otwarcia zaworu',
+        'alarm.0.safety_switch.error_code': '216',
+        'alarm.0.safety_switch.switcher_state': 'false'
     }
 
     socket.emit('refresh.data', {
