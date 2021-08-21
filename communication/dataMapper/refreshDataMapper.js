@@ -4,7 +4,7 @@ function refreshDataMapper(values) {
     return {
         cleaning_substance: {
             refill: values['cleaning_substance.refill'],
-            current_volume: values['cleaning_substance.current_volume'],
+            current_volume_liters: values['cleaning_substance.current_volume'],
             valve_open: values['cleaning_substance.valve_open'],
             max_level: values['cleaning_substance.max_level'],
             min_level: values['cleaning_substance.min_level'],
@@ -58,7 +58,7 @@ function refreshDataMapper(values) {
         mixing_tank: {
             valve_open: values['mixing_tank.valve_open'],
             mixing_time_seconds_remaining: values['mixing_tank.time_seconds_remaining'],
-            current_volume: values['mixing_tank.current_volume']
+            current_volume_liters: values['mixing_tank.current_volume']
         },
         errors: [{
                 time: values['alarm.0.safety_switch.date'],

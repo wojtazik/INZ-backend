@@ -1,6 +1,5 @@
 function ControllerPaints(websocket, plcConnection) {
     websocket.on('change.paints', (paints, callback) => {
-        console.log('changePaints', paints)
         const cyanToGain =  paints.find((paint) => paint.name === 'cyan')
             .count_liters.toFixed(2)
         const magentaToGain =  paints.find((paint) => paint.name === 'magenta')
@@ -35,7 +34,8 @@ function ControllerPaints(websocket, plcConnection) {
     })
 
     websocket.on('change.paint.refilling', (paint) => {
-        plcConnection.writeItems([`paints.${paint.name}.refill`], [paint.refill])
+        console.log(paint)
+        plcConnection.writeItems([`paints.${paint.name}.refill`], [paint.refilling])
     })
 
     websocket.on('change.paint.valve_open', (paint) => {
