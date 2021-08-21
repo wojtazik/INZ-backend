@@ -12,6 +12,8 @@ function refreshDataMapper(values) {
         },
         process_running: values.process_running,
         mixer_working: values.mixer_working,
+        choosen_color_code: values.choosen_color_code,
+        mixer_working_manual: values.mixer_working_manual,
         paints: [{
                 name: constants.colors.cyan,
                 refill: values['paints.cyan.refill'],
