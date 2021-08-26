@@ -10,7 +10,10 @@ function refreshDataMapper(values) {
             min_level: values['cleaning_substance.min_level'],
 
         },
-        process_running: values.process_running,
+        process_running: {
+            settable: values.process_running_settable,
+            info: values.process_running
+        },
         mixer_working: values.mixer_working,
         choosen_color_code: values.choosen_color_code,
         mixer_working_manual: values.mixer_working_manual,

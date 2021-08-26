@@ -1,8 +1,10 @@
 const variablesMapping = {
     'mixer_working': 'DB2,X45.6',
     'mixer_working_manual': 'DB2,X52.4',
-    'choosen_color_code': 'DB2,S54.255',
-    'process_running': 'TODO',
+    'choosen_color_code': 'DB2,S84.255',
+    'process_running_settable': 'DB2,X81.6',
+    'process_running': 'DB2,X81.7',
+    'process_running_stop': 'DB2,X340.0',
 
     'paints.cyan.refill': 'DB2,X82.1', //TD
     'paints.cyan.current_volume': 'DB3,REAL0', //TD
@@ -50,8 +52,6 @@ const variablesMapping = {
     'mixing_tank.current_volume': 'DB3,REAL24',
     'mixing_tank.volume_to_gain': 'TODO',
     'mixing_tank.time_seconds': 'TODO',
-
-
 
     'alarm.0.safety_switch.date': 'DB1,DTL0',
     'alarm.0.safety_switch.message': 'DB1,S12.256',

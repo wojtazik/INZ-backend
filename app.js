@@ -4,10 +4,13 @@ const nodes7 = require('nodes7')
 const MixerWorkingController = require('./communication/mixer_working.websocket')
 const useDataRefresher = require('./communication/useDataRefresh')
 const variablesMapping = require('./communication/dataMapper/variableAdresess')
+
 const ControllerChoosenColorCode = require('./communication/choosen_color_code.websocket')
 const ControllerPaints = require('./communication/paints.websocket')
 const ControllerCleaningSubstance = require('./communication/cleaning_substance.websocket')
 const ControllerMixingTank = require('./communication/mixing_tank.websocket')
+const ControllerProcessRunning = require('./communication/process_running.websocket')
+
 
 const app = express()
 const port = 3001
@@ -49,4 +52,5 @@ io.on('connection', (socket) => {
     ControllerPaints(socket, plcConnection)
     ControllerCleaningSubstance(socket, plcConnection)
     ControllerMixingTank(socket, plcConnection)
+    ControllerProcessRunning(socket, plcConnection)
 })
