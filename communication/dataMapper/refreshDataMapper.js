@@ -14,6 +14,7 @@ function refreshDataMapper(values) {
             settable: values.process_running_settable,
             info: values.process_running
         },
+        manualWork: values.manual_work,
         mixer_working: values.mixer_working,
         choosen_color_code: values.choosen_color_code,
         mixer_working_manual: values.mixer_working_manual,

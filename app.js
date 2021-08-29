@@ -10,6 +10,7 @@ const ControllerPaints = require('./communication/paints.websocket')
 const ControllerCleaningSubstance = require('./communication/cleaning_substance.websocket')
 const ControllerMixingTank = require('./communication/mixing_tank.websocket')
 const ControllerProcessRunning = require('./communication/process_running.websocket')
+const ControllerManualWork = require('./communication/manual_work.websocket')
 
 
 const app = express()
@@ -53,4 +54,5 @@ io.on('connection', (socket) => {
     ControllerCleaningSubstance(socket, plcConnection)
     ControllerMixingTank(socket, plcConnection)
     ControllerProcessRunning(socket, plcConnection)
+    ControllerManualWork(socket, plcConnection)
 })

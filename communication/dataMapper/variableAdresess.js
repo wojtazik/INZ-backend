@@ -5,6 +5,7 @@ const variablesMapping = {
     'process_running_settable': 'DB2,X81.6',
     'process_running': 'DB2,X81.7',
     'process_running_stop': 'DB2,X340.0',
+    'manual_work': 'DB2,X340.1',
 
     'paints.cyan.refill': 'DB2,X82.1', //TD
     'paints.cyan.current_volume': 'DB3,REAL0', //TD
