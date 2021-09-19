@@ -1,7 +1,9 @@
 const variablesMapping = {
-    'mixer_working': 'DB2,X45.6',
+    'mixer_working': 'DB2,X79.6',
     'mixer_working_manual': 'DB2,X52.4',
     'choosen_color_code': 'DB2,S84.255',
+    'choosen_color_name': 'DB2,INT926',
+
     'process_running_settable': 'DB2,X81.6',
     'process_running': 'DB2,X81.7',
     'process_running_stop': 'DB2,X340.0',
@@ -44,15 +46,17 @@ const variablesMapping = {
 
     'cleaning_substance.refill': 'DB2,X82.0', //TD
     'cleaning_substance.current_volume': 'DB3,REAL20', //TD
-    'cleaning_substance.valve_open': 'TODO',
+    'cleaning_substance.valve_open': 'DB2,X78.5',
     'cleaning_substance.max_level': 'TODO',
     'cleaning_substance.min_level': 'TODO',
 
-    'mixing_tank.valve_open': 'DB2,X46.1',
-    'mixing_tank.time_seconds_remaining': 'TODO',
+    'mixing_tank.valve_open': 'DB2,X340.2',
+    'mixing_tank.valve_open_read': 'DB2,X80.1',
+
     'mixing_tank.current_volume': 'DB3,REAL24',
     'mixing_tank.volume_to_gain': 'TODO',
-    'mixing_tank.time_seconds': 'TODO',
+    'mixing_tank.time_seconds': 'DB2,INT342',
+    'mixing_tank.time_seconds_remaining': 'DB2,INT356',
 
     'alarm.0.safety_switch.date': 'DB1,DTL0',
     'alarm.0.safety_switch.message': 'DB1,S12.256',

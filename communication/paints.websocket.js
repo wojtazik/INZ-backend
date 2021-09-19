@@ -10,20 +10,22 @@ function ControllerPaints(websocket, plcConnection) {
             .count_liters.toFixed(2)
         const blackToGain =  paints.find((paint) => paint.name === 'black')
             .count_liters.toFixed(2)
-        console.log('paints', paints)
-        plcConnection.writeItems([
-            'paints.cyan.count_liters',
-            'paints.magenta.count_liters',
-            'paints.yellow.count_liters',
-            'paints.white.count_liters',
-            'paints.black.count_liters',
-        ],[
-            cyanToGain,
-            magentaToGain,
-            yellowToGain,
-            whiteToGain,
-            blackToGain
-        ])
+        console.log('\n\n\n\n\n\npaints\n\n\n\n\n\n\n\n', paints)
+        setTimeout(() => {
+            plcConnection.writeItems([
+                'paints.cyan.count_liters',
+                'paints.magenta.count_liters',
+                'paints.yellow.count_liters',
+                'paints.white.count_liters',
+                'paints.black.count_liters',
+            ],[
+                cyanToGain,
+                magentaToGain,
+                yellowToGain,
+                whiteToGain,
+                blackToGain
+            ], (result) => console.error('aaaaaaaaa', result))
+        }, 500)
     })
 
     websocket.on('change.paint.refilling', (paint) => {

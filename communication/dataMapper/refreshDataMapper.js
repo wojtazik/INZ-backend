@@ -62,7 +62,8 @@ function refreshDataMapper(values) {
         mixing_tank: {
             valve_open: values['mixing_tank.valve_open'],
             mixing_time_seconds_remaining: values['mixing_tank.time_seconds_remaining'],
-            current_volume_liters: values['mixing_tank.current_volume']
+            current_volume_liters: values['mixing_tank.current_volume'],
+            valve_open_read: values['mixing_tank.valve_open_read']
         },
         errors: [{
                 time: values['alarm.0.safety_switch.date'],

@@ -1,7 +1,6 @@
 
 function ControllerProcessRunning(websocket, plcConnection) {
     websocket.on('change.process_running', (process_running) => {
-        console.log('STARA GRUBA KURWA Z MONOPOLOWEGO')
         if (process_running) {
             plcConnection.writeItems([
                 `process_running_settable`,
