@@ -49,6 +49,8 @@ const variablesMapping = {
     'cleaning_substance.valve_open': 'DB2,X78.5',
     'cleaning_substance.max_level': 'TODO',
     'cleaning_substance.min_level': 'TODO',
+    'cleaning_substance.cleaning_time': 'DB2,INT364',
+    'cleaning_substance.cleaning_time_remaining': 'DB2,INT382',
 
     'mixing_tank.valve_open': 'DB2,X340.2',
     'mixing_tank.valve_open_read': 'DB2,X80.1',

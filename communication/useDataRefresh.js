@@ -13,7 +13,7 @@ function useDataRefresher(socket, plcConnection) {
                 })
             }
         })
-    }, 300)
+    }, 500)
 
     socket.on('disconnect', () => {
         clearInterval(dataRefresher)

@@ -8,6 +8,7 @@ function refreshDataMapper(values) {
             valve_open: values['cleaning_substance.valve_open'],
             max_level: values['cleaning_substance.max_level'],
             min_level: values['cleaning_substance.min_level'],
+            cleaning_time_remaining: values['cleaning_substance.cleaning_time_remaining'],
 
         },
         process_running: {
