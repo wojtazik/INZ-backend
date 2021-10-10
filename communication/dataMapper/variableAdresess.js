@@ -1,6 +1,6 @@
 const variablesMapping = {
     'mixer_working': 'DB2,X79.6',
-    'mixer_working_manual': 'DB2,X52.4',
+    'mixer_working_manual': 'DB2,X666.0',
     'choosen_color_code': 'DB2,S84.255',
     'choosen_color_name': 'DB2,INT926',
     'emergency_stop': 'DB2,X78.6',
