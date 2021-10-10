@@ -3,7 +3,7 @@ const variablesMapping = {
     'mixer_working_manual': 'DB2,X52.4',
     'choosen_color_code': 'DB2,S84.255',
     'choosen_color_name': 'DB2,INT926',
-
+    'emergency_stop': 'DB2,X78.6',
     'process_running_settable': 'DB2,X81.6',
     'process_running': 'DB2,X81.7',
     'process_running_stop': 'DB2,X340.0',

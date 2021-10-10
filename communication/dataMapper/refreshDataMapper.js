@@ -16,6 +16,7 @@ function refreshDataMapper(values) {
             info: values.process_running
         },
         manualWork: values.manual_work,
+        emergency_stop: values['emergency_stop'],
         mixer_working: values.mixer_working,
         choosen_color_code: values.choosen_color_code,
         mixer_working_manual: values.mixer_working_manual,
